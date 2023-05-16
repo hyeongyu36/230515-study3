@@ -1,0 +1,226 @@
+@charset "utf-8";
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 1400px;
+  height: 2500px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.048),
+      rgb(255, 255, 255, 0.5)
+    ),
+    url(../images/bg1.jpg);
+  background-size: cover;
+  margin: 0 auto;
+}
+img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* 상단 */
+header {
+  width: 1400px;
+  height: 150px;
+  background-color: aquamarine;
+  border-top: 5px solid rgb(171, 202, 176);
+}
+ul {
+  list-style: none;
+}
+.menu li {
+  float: left;
+  margin: 0 120px;
+  padding: 10px;
+}
+.menu ul a {
+  color: black;
+  font-size: 18px;
+}
+.menu ul a:hover {
+  color: darkgreen;
+}
+.logo {
+  width: 1400px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 120px;
+  font-family: "InkLipquid";
+  font-size: 30px;
+  color: rgb(11, 48, 11);
+}
+.menu {
+  width: 1400px;
+  height: 40px;
+  background-color: rgb(171, 202, 176);
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
+}
+
+/* 본문 */
+/* 메인 */
+.main {
+  width: 1200px;
+  height: 800px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+}
+.mainimg1 {
+  float: left;
+}
+.mainimg2 {
+  width: 600px;
+  height: 800px;
+  float: right;
+}
+.img0 {
+  width: 600px;
+  height: 800px;
+}
+.img00 {
+  width: 600px;
+  height: 400px;
+}
+.img000 {
+  width: 600px;
+  height: 395px;
+}
+/* 메인끝 */
+
+/* picture */
+.picture {
+  width: 1100px;
+  height: 430px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  margin: 50px auto;
+  display: block;
+  border-top: 5px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid rgb(0, 0, 0, 0.3);
+}
+.picture li {
+  float: left;
+}
+.picture img {
+  width: 250px;
+  height: 350px;
+  margin: 2px;
+  transition: 0.3s;
+}
+.picture ul p {
+  font-size: 30px;
+  width: 1000px;
+  height: 30px;
+  padding: 10px;
+}
+.picture a:hover img {
+  transform: scale(1.1);
+}
+/* ficture끝 */
+
+/* 본문1 */
+.bg-1 img {
+  width: 500px;
+  height: 400px;
+}
+.contain {
+  margin: 50px auto;
+  width: 1200px;
+}
+.contain1 {
+  float: left;
+  padding: 10px;
+}
+.contain2 {
+  float: right;
+  width: 420px;
+  height: 300px;
+  padding: 30px;
+}
+.bg-1 {
+  background-color: rgba(255, 249, 196, 0.3);
+  width: 1000px;
+  height: 420px;
+  position: relative;
+  /* float: left; */
+  display: block;
+  margin: 50px auto;
+}
+.img2 {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s linear;
+  padding: 10px;
+}
+.bg-1:hover .img2 {
+  display: block;
+  opacity: 1;
+}
+.contain3 {
+  float: right;
+  padding: 0px;
+}
+/* 본문2 */
+.bg-2 img {
+  width: 500px;
+  height: 400px;
+}
+.bg-2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1000px;
+  height: 420px;
+  position: relative;
+  /* float: left; */
+  margin: 50px auto;
+}
+.img4 {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  transition: opacity 0.5s linear;
+}
+.bg-2:hover .img4 {
+  display: block;
+  opacity: 1;
+}
+.contain3 {
+  padding: 10px;
+}
+.contain4 {
+  float: left;
+  width: 420px;
+  height: 300px;
+  padding: 30px;
+}
+
+/* 하단 */
+.footer {
+  width: 1400px;
+  height: 50px;
+  background-color: #acacac;
+  color: rgb(59, 59, 59);
+  text-align: center;
+  line-height: 50px;
+  border-top: 1px solid #222;
+}
